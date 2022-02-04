@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Start your development with a Dashboard for Bootstrap 5.">
+  <meta name="author" content="">
+  <title>Registration From</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/img/favicon.png" type="image/png">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css" integrity="sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+
+  <!-- Google fonts-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+
+  <style type="text/css">
+  
+    body{
+      background-image: url('assets/img/looping-bg.jpg');
+    }
+
+    .form-signin input[type="text"] {
+      margin-bottom: -1px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+
+    .form-signin input[type="password"] {
+      margin-bottom: 10px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    .form-signin .form-control {
+      position: relative;
+      font-size: 16px;
+      height: auto;
+      padding: 10px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  </style>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+  <!-- Main content -->
+  <div class="main-content">
+    <!-- Page content -->
+      <div class="container">
+        <div class="py-4"></div>
+        <div class="row justify-content-center align-items-center vh-100">
+          <div class="col-lg-2 col-md-2"></div>
+          <div class="col-lg-8 col-md-8 col-sm-12 col-12" style="background: #fff;">
+            <form method="POST" action="" accept-charset="UTF-8" role="form" id="loginform" class="form-signin"><input name="_token" type="hidden" value="">
+              <fieldset>
+                    <div class="row">
+                    <hr class="colorgraph mb-3">
+                      <div class="col-lg-6 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                          <label>Employ Id</label>
+                          <div class="value">
+                              <input class="input--style-6" type="text" name="employ_id">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                          <label>Name <small>*</small></label>
+                          <div class="value">
+                              <input class="input--style-6" type="text" name="Name">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                          <label>Designation </label>
+                          <div class="value">
+                              <input class="input--style-6" type="text" name="Designation">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                          <label>Blood Group</label>
+                          <div class="value">
+                              <input class="input--style-6" type="text" name="blood_group">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                          <label>Phone number <small>*</small></label>
+                          <div class="value">
+                              <input class="input--style-6" type="text" name="phone_number">
+                          </div>
+                          <div class="label--desc mt-0">Your phone number won't be disclosed anywhere</div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                          <label>Present Address</label>
+                          <div class="value">
+                              <textarea class="form-control textarea--style-6" rows="3" cols="4"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                          <label>Permanent Address</label>
+                          <div class="value">
+                              <textarea class="form-control textarea--style-6" rows="3" cols="4"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                          <label>NID Number</label>
+                          <div class="value">
+                              <input class="input--style-6" type="text" name="nid_num">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                          <label>Upload NID Card Front Side</label>
+                          <div class="value">
+                              <div class="input-group">
+                                  <input type="file" id="file" name="photo" onchange="readURL(this);" />
+                                  <img id="blah" src="assets/img/transparent.png" alt="your image" />
+                              </div>
+                              <div class="label--desc mt-0">Upload your NID CARD Front Side Picture. Max file size 2 MB</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-12 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                          <label>Upload NID Card Back Side</label>
+                          <div class="value">
+                              <div class="input-group">
+                                  <input type="file" id="file1" name="photo" onchange="previewFile(this);" />
+                                    <img id="previewImg" src="assets/img/transparent.png" alt="your image" />
+                              </div>
+                              <div class="label--desc mt-0">Upload your NID CARD Back Side Picture. Max file size 2 MB</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                          <label>Email Id</label>
+                          <div class="value">
+                              <input class="input--style-6" type="email" name="email1">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                          <label>Date of Birth</label>
+                          <div class="value">
+                              <input class="input--style-6" type="date" id="birthDate">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                            <label class="control-label col-sm-3">Gender</label>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Male">
+                              <label class="form-check-label" for="inlineRadio1">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="Female">
+                              <label class="form-check-label" for="inlineRadio2">Female</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="Other">
+                              <label class="form-check-label" for="inlineRadio3">Other</label>
+                            </div>
+                        </div> <!-- /.form-group -->
+                      </div>
+                      <div class="col-lg-6 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                            <label>Upload Signature</label>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input type="file" id="file2" name="photo" onchange="preFile(this);" />
+                                    <img id="img_pre" src="assets/img/transparent.png" alt="your image" />
+                                </div>
+                                <div class="label--desc mt-0">Upload your Signature. Max file size 2 MB</div>
+                            </div>
+                        </div> <!-- /.form-group -->
+                      </div>
+                      <div class="col-lg-6 col-sm-12 col-12">
+                        <div class="form-group pb-3">
+                            <label>Upload Picture</label>
+                            <div class="value">
+                                <div class="input-group">
+                                    <p>
+                                        <input type="file" id="file3" name="photo" onchange="cvpic(this);"/>
+                                    </p>
+                                    <img id="cv_img" src="assets/img/transparent.png" alt="Placeholder">
+                                </div>
+                                <div class="label--desc mt-0">Upload your Picture. Max file size 2 MB</div>
+                            </div>
+                        </div> <!-- /.form-group -->
+                      </div>
+                        
+                      <div class="card-footer">
+                          <button class="btn btn--radius-2 btn--blue-2" type="submit">Submit</button>
+                      </div>
+                    </div>
+                </fieldset>
+              </form>
+          </div>
+          <div class="col-lg-2 col-md-2"></div>
+        </div>
+      </div>
+  </div>
+  <!-- Footer -->
+  <footer class="py-3 footer-main" id="footer-main">
+    <div class="container-fluid">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-xl-12">
+          <!-- <div class="copyright text-center text-xl-left text-muted">
+            &copy; 2021 <a href="#" class="font-weight-bold ml-1" target="_blank">FNF PLANET</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Argon Scripts -->
+  <!-- Core -->
+  <!-- Vendor JS Files -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/6c4b195995.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/js/bootstrap.bundle.min.js" integrity="sha512-trzlduO3EdG7Q0xK4+A+rPbcolVt37ftugUSOvrHhLR5Yw5rsfWXcpB3CPuEBcRBCHpc+j18xtQ6YrtVPKCdsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="assets/js/global.js"></script>
+  <script src="assets/js/script.js"></script>
+  
+</body>
+</html>
+
+
+
+<!------------------->
+function readURL(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $('#blah').attr('src', e.target.result);
+        };
+
+        reader.readAsDataURL(input.files[0]);
+    }
+}
+
+function previewFile(input){
+    var file = $("#file1").get(0).files[0];
+ 
+    if(file){
+        var reader = new FileReader();
+
+        reader.onload = function(){
+            $("#previewImg").attr("src", reader.result);
+        }
+
+        reader.readAsDataURL(file);
+    }
+}
+
+function preFile(input){
+    var file = $("#file2").get(0).files[0];
+ 
+    if(file){
+        var reader = new FileReader();
+
+        reader.onload = function(){
+            $("#img_pre").attr("src", reader.result);
+        }
+
+        reader.readAsDataURL(file);
+    }
+}
+
+function cvpic(input){
+    var file = $("#file3").get(0).files[0];
+ 
+    if(file){
+        var reader = new FileReader();
+
+        reader.onload = function(){
+            $("#cv_img").attr("src", reader.result);
+        }
+
+        reader.readAsDataURL(file);
+    }
+}
+
+<!----------------->
